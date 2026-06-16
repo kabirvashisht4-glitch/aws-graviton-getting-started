@@ -265,7 +265,7 @@ echo $time_compute_steps
 ```
 
 #### Build WPS 4.5 with ACFL on Graviton
-After compiling WRF 4.5, use [this script](scripts-wrf/scripts-wps/0-install-jasper.sh) with command `./scripts-wps/0-install-jasper.sh` to install the required tools, jasper. Then, use [this script](scripts-wps/compile-wps.sh) with command `./scripts-wps/compile-wps.sh` to configure and compile WPS.
+After compiling WRF 4.5, use [this script](scripts-wrf/scripts-wps/0-install_jasper.sh) with command `./scripts-wrf/scripts-wps/0-install_jasper.sh` to install the required tools, jasper. Then, use [this script](scripts-wrf/scripts-wps/compile-wps.sh) with command `./scripts-wrf/scripts-wps/compile-wps.sh` to configure and compile WPS.
 
 ```
 # get WPS source 4.5

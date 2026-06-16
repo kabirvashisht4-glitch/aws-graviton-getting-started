@@ -130,7 +130,7 @@ sam build --use-container
 ### Local testing
 You can test the arm64 function locally using either AWS SAM or Docker natively.
 
-When using AWS SAM, you can use [`sam local invoke`]([template.yml](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-local-invoke.html)) to test your function locally, passing in a sample `event.json`
+When using AWS SAM, you can use [`sam local invoke`](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-local-invoke.html) to test your function locally, passing in a sample `event.json`
 ```
 sam local invoke LambdaNumberFunction -e ./test/event.json
 ```
@@ -191,7 +191,7 @@ You can then create a Lambda function from the container image using the AWS Man
 ## Comparing x86 and arm64 performance and cost.
 You can use the [AWS Lambda Power Tuning](https://github.com/alexcasalboni/aws-lambda-power-tuning) open-source project to suggest a configuration to minimize costs and maximize performance. The tool allows you to compare two results on the same chart and incorporate arm64-based pricing. This is useful to compare two versions of the same function, one using x86 and the other arm64.
 
-A demo application computes prime numbers. The AWS SAM [template.yml](template.yml) file contains two Lambda functions, one for x86 and one for arm64. Both functions use the same Python source code in [`./src/app.py`](./src/app.py) to compute the prime numbers.
+A demo application computes prime numbers. The AWS SAM [template.yml](PythonPrime/template.yaml) file contains two Lambda functions, one for x86 and one for arm64. Both functions use the same Python source code in [`./src/app.py`](PythonPrime/src/app.py) to compute the prime numbers.
 
 Ensure the repository is cloned from the previous demo and change into the directory.
 ```
